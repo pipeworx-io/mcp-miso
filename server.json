@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/miso",
   "title": "Miso",
   "description": "Real-time electricity data for MISO, the grid operator for 15 US states from Louisiana to…",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/miso",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-miso",

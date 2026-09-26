@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-miso",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Real-time electricity data for MISO, the grid operator for 15 US states from Louisiana to Minnesota plus Manitoba: generation by fuel type, power demand, five-minute wholesale electricity prices, wind and solar output, and the transmission constraints driving congestion.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-39790fed936d6d863a63bfc6f2f6e2a096caf36970394154e3878a309e1f0288",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "sourceHash": "v1-1042d7d55b69d13dbdfa819d51d30358b11f386638910c5aae442382cf79f820",
+    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
   }
 }
