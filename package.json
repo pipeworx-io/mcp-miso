@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-miso",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Real-time electricity data for MISO, the grid operator for 15 US states from Louisiana to Minnesota plus Manitoba: generation by fuel type, power demand, five-minute wholesale electricity prices, wind and solar output, and the transmission constraints driving congestion.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-miso": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "miso"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-miso.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/miso",
   "pipeworx": {
-    "sourceHash": "v1-ef1f11c8e72dac7768524bf01c9574e3c854c340eeb585b06376ed0ac7341f3f",
-    "sourceCommit": "ba9dd6df5992aeb16ef2425ee86d1752c34ca636"
+    "mode": "gateway",
+    "slug": "miso",
+    "gatewaySlug": "miso",
+    "sourceHash": "v1-7369749aba2e83dc6d459a3b32f27d2e1624112f855ed27912e5a12b3a2df183",
+    "sourceCommit": "5c89d6abb778d45da5d92002eb251978622bedf9"
   }
 }
